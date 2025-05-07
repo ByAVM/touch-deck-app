@@ -1,0 +1,86 @@
+{
+    "$schema": "../../../public/schemas/panel.schema.json",
+    "title": "popular",
+    "groups": [
+        {
+            "label": "Power",
+            "orientation": "vertical",
+            "controls": [
+                {
+                    "type": "button",
+                    "devNo": 1,
+                    "id": 1,
+                    "label": "Power",
+                    "help": "toggle",
+                    "showHelp": true,
+                    "variant": "red"
+                },
+                {
+                    "type": "button",
+                    "devNo": 1,
+                    "id": 2,
+                    "label": "Engine",
+                    "help": "toggle",
+                    "showHelp": true
+                }
+            ]
+        },
+        {
+            "label": "Flight",
+            "orientation": "vertical",
+            "controls": [
+                {
+                    "type": "button",
+                    "devNo": 1,
+                    "id": 3,
+                    "label": "Landing",
+                    "help": "gear",
+                    "showHelp": true
+                },
+                {
+                    "type": "button",
+                    "devNo": 1,
+                    "id": 4,
+                    "label": "VTOL",
+                    "help": "toggle",
+                    "showHelp": true
+                },
+                {
+                    "type": "button",
+                    "devNo": 1,
+                    "id": 5,
+                    "label": "Mode",
+                    "help": "togle",
+                    "showHelp": true
+                }
+            ]
+        },
+        {
+            "label": "Speed",
+            "controls": [
+                {
+                    "type": "slider",
+                    "axis": "slider",
+                    "devNo": 1,
+                    "label": "Max speed",
+                    "orientation": "vertical"
+                }
+            ]
+        },
+        {
+            "variant": "orange",
+            "label": "Interior",
+            "controls": [
+                {
+                    "type": "button",
+                    "variant": "orange",
+                    "devNo": 1,
+                    "id": 6,
+                    "label": "Doors",
+                    "help": "open/close",
+                    "showHelp": true
+                }
+            ]
+        }
+    ]
+}

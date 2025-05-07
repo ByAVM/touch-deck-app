@@ -1,0 +1,70 @@
+{
+    "$schema": "https://json-schema.org/draft/2020-12/schema",
+    "$id": "https://byavm.github.io/test/schemas/panel.schema.json",
+    "title": "Touch Deck Panel config schema",
+    "type": "object",
+    "required": ["title", "groups"],
+    "properties": {
+        "title": {
+            "type": "string"
+        },
+        "groups": {
+            "type": "array",
+            "items": { "$ref": "#/$defs/Group" }
+        }
+    },
+
+    "$defs": {
+        "Variant": { "enum": ["blue", "red", "orange", "green"] },
+        "Orientation": { "enum": ["horizontal", "vertical"] },
+        "Group": {
+            "type": "object",
+            "required": ["controls"],
+            "properties": {
+                "label": {
+                    "type": "string"
+                },
+                "controls": {
+                    "type": "array",
+                    "items": { "anyOf": [
+                        {
+                            "$ref": "#/$defs/ButtonControl"
+                        },
+                        {
+                            "$ref": "#/$defs/SliderControl"
+                        }
+                    ] }
+                },
+                "variant": { "$ref": "#/$defs/Variant" },
+                "orientation": { "$ref": "#/$defs/Orientation" }
+            }
+        },
+        "ButtonControl": {
+            "type": "object",
+            "required": ["type", "id", "devNo"],
+            "properties": {
+                "type": { "enum": ["button"] },
+                "devNo": { "type": "integer", "minimum": 1, "maximum": 16, "description": "Number of device. Attention! Make sure the device is enabled in the control panel." },
+                "id": { "type": "integer", "minimum": 1, "maximum": 128 },
+                "variant": { "$ref": "#/$defs/Variant" },
+                "orientation": { "$ref": "#/$defs/Orientation" },
+                "label": { "type": "string" },
+                "help": { "type": "string" },
+                "showHelp": { "type": "boolean" },
+                "delay": { "type": "integer", "description": "Delay of release the button in MS", "minimum": 50, "maximum": 3000 }
+            }
+        },
+        "SliderControl": {
+            "type": "object",
+            "required": ["type", "axis", "devNo"],
+            "properties": {
+                "type": { "enum": ["slider"] },
+                "devNo": { "type": "integer", "minimum": 1, "maximum": 16, "description": "Number of device. Attention! Make sure the device is enabled in the control panel." },
+                "variant": { "$ref": "#/$defs/Variant" },
+                "orientation": { "$ref": "#/$defs/Orientation" },
+                "label": { "type": "string" },
+                "axis": { "enum": ["x", "y", "z", "rx", "ry", "rz", "slider", "dialslider"] }
+            }
+        }
+    }
+}

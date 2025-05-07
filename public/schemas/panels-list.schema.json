@@ -1,0 +1,17 @@
+{
+    "$schema": "https://json-schema.org/draft/2020-12/schema",
+    "$id": "https://byavm.github.io/test/schemas/panels-list.schema.json",
+    "title": "List of panels schema",
+    "type": "array",
+    "items": { "$ref": "#/$defs/Panel"},
+    "$defs": {
+        "Panel": {
+            "type": "object",
+            "required": ["title", "path"],
+            "properties": {
+                "title": { "type": "string" },
+                "path": { "type": "string" }
+            }
+        }
+    }
+}

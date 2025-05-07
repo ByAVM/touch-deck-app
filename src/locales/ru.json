@@ -1,0 +1,22 @@
+{
+  "features.client.hooks.useClient.clientNotInitialized": "Client not initialized",
+  "features.client.model.connectionClosed": "Connection closed. Reconnect after {delay}s",
+  "features.client.model.connectionDone": "Connection completed",
+  "features.client.model.connectionStart": "Start connect",
+  "features.client.model.error": "Client error!",
+  "features.client.ui.ClientProvider.connectButton": "Connect",
+  "features.client.ui.ClientProvider.connectionInProcess": "Connecting..",
+  "features.client.ui.ClientProvider.heading": "Touch Deck",
+  "features.panels.ui.PanelsProvider.closeButton": "Close",
+  "pages.app.emptyTitle": "Select panel from menu",
+  "pages.home.aboutText": "<p>Управляйте своими играми с любого устройства! Наше приложение превращает ваш смартфон или планшет в игровой контроллер.</p><p>Приложение состоит из двух частей: клиентского приложения для компьютера с поддержкой vJoy и удобного веб-интерфейса, который подключается к нему по локальной сети. Управляйте игрой со своего устройства — настраивайте кнопки, создавайте свои панели и играйте в любимые игры так, как вам удобно.</p><p>Идеально подходит для управления симуляторами — обеспечивает простое взаимодействие с игрой, делая управление более удобным и интуитивным.</p>",
+  "pages.home.actionButton": "Go to app",
+  "pages.home.heading": "Touch Deck",
+  "pages.home.howTo.firstStep": "Первое,что Вам нужно - установить драйвер vJoy для Вашей системы (windows 10 или windows 11). Актуальная версия доступна в репозитории: {link}.",
+  "pages.home.howTo.secondStep": "После установки драйвера необходимо скачать и установить последнюю версию клиента: {link}",
+  "pages.home.howTo.thirdStep": "После запуска клиента, используйте один из полученных ip для подключения.",
+  "pages.home.howToHeading": "How to install?",
+  "pages.home.roadMapHeadig": "Roadmap",
+  "pages.home.subtitle": "Control the game from your browser",
+  "pages.home.whatIsItHeading": "What is it?"
+}

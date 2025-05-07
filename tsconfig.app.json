@@ -22,7 +22,11 @@
     "noFallthroughCasesInSwitch": true,
     "noUncheckedSideEffectImports": true,
     "paths": {
-      "@styled-system/*": ["./styled-system/*"]
+      "@styled-system/*": ["./styled-system/*"],
+      "@shared/*": ["./src/shared/*"],
+      "@features/*": ["./src/features/*"],
+      "@pages/*": ["./src/pages/*"],
+      "@locales/*": ["./src/locales/*"]
     }
   },
   "include": ["src", "styled-system"]
