@@ -1,0 +1,10 @@
+[
+  {
+    "title": "Controls",
+    "path": "test/test.json"
+  },
+  {
+    "title": "Star Citizen: Featured",
+    "path": "sc/featured.json"
+  }
+]

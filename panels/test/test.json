@@ -1,0 +1,80 @@
+{
+    "title": "test/Test",
+    "groups": [
+        {
+            "label": "Buttons",
+            "orientation": "vertical",
+            "controls": [
+                {
+                    "type": "button",
+                    "id": 1,
+                    "devNo": 1,
+                    "showHelp": true,
+                    "label": "Some button"
+                },
+                {
+                    "type": "button",
+                    "id": 1,
+                    "devNo": 1,
+                    "showHelp": true,
+                    "label": "Some button",
+                    "variant": "red"
+                },
+                {
+                    "type": "button",
+                    "id": 1,
+                    "devNo": 1,
+                    "showHelp": true,
+                    "label": "Some button",
+                    "variant": "orange"
+                },
+                {
+                    "type": "button",
+                    "id": 1,
+                    "devNo": 1,
+                    "showHelp": true,
+                    "label": "Some button",
+                    "variant": "green"
+                }
+            ]
+        },
+        {
+            "label": "Sliders",
+            "variant": "orange",
+            "controls": [
+                {
+                    "type": "slider",
+                    "axis": "x",
+                    "devNo": 1,
+                    "variant": "blue",
+                    "orientation": "vertical",
+                    "label": "Blue"
+                },
+                {
+                    "type": "slider",
+                    "axis": "x",
+                    "devNo": 1,
+                    "variant": "red",
+                    "orientation": "vertical",
+                    "label": "Red"
+                },
+                {
+                    "type": "slider",
+                    "axis": "x",
+                    "devNo": 1,
+                    "variant": "orange",
+                    "orientation": "vertical",
+                    "label": "Orange"
+                },
+                {
+                    "type": "slider",
+                    "axis": "x",
+                    "devNo": 1,
+                    "variant": "green",
+                    "orientation": "vertical",
+                    "label": "Green"
+                }
+            ]
+        }
+    ]
+}
