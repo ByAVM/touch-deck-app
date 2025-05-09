@@ -5,7 +5,7 @@ import packageJson from './package.json'
 
 // https://vite.dev/config/
 export default defineConfig(({mode}) => ({
-  base: mode === 'production' ? '/test' : '',
+  base: mode === 'production' ? '/touch-deck-app' : '',
   plugins: [react()],
   resolve: {
     alias: {
